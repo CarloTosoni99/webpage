@@ -1,4 +1,4 @@
-import { component$, useStore, useStyles$ } from '@builder.io/qwik';
+import { component$, useStyles$ } from '@builder.io/qwik';
 import Image from '../../imgs/io.jpeg?jsx';
 
 import style from './presentation.css?inline';
