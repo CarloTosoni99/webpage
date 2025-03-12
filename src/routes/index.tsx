@@ -15,7 +15,6 @@ export default component$(() => {
       <div class="main">
         <Duck />
         <Presentation data={dataAbout} />
-        <p>prova</p>
       </div>
     </section>
   );

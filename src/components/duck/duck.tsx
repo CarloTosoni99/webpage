@@ -5,8 +5,8 @@ import style from './duck.css?inline';
 const duckframes = [1,2,3,4,3,2,1,5,6,7,6,5];
 
 const baseDuckPath = [
-  "/src/imgs/duck/duck",
-  "/src/imgs/duck/skeleduck"
+  "../../imgs/duck/duck",
+  "../../imgs/duck/skeleduck"
 ];
 
 const duckFormat = ".png";
