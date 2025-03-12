@@ -1,25 +1,33 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
+import Topbar from '~/components/topbar/topbar';
+import Presentation from '~/components/presentation/presentation';
+import Duck from '~/components/duck/duck';
+
+import dataAbout from "~/data/aboutdata";
+
+
 export default component$(() => {
   return (
-    <>
-      <h1>Hi 👋</h1>
-      <div>
-        Can't wait to see what you build with qwik!
-        <br />
-        Happy coding.
+    <section>
+      <Topbar page={3}/>
+      <div class="main">
+        <Duck />
+        <Presentation data={dataAbout} />
       </div>
-    </>
+    </section>
   );
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: "Carlo Tosoni's webpage",
   meta: [
     {
       name: "description",
-      content: "Qwik site description",
+      content: "This is my personal webpage!",
     },
   ],
 };
+
+
