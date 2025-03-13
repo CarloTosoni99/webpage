@@ -2,30 +2,22 @@ import { component$, useStyles$, useSignal, useVisibleTask$ } from '@builder.io/
 
 import style from './duck.css?inline';
 
-const duckframes = [1,2,3,4,3,2,1,5,6,7,6,5];
-
-const baseDuckPath = [
-  "/imgs/duck/duck",
-  "/imgs/duck/skeleduck"
-];
-
-const duckFormat = ".png";
-
 const leftAnim = "duck-left";
 const rightAnim = "duck-right";
 
-const duckFrameTime = 100;
-const duckAnimTime = 12000;
+const duckAnimTime = 16000;
 
-const duckChoice = Math.random();
+const duckBasePath = ["imgs/duck/duck", "imgs/duck/skeleduck"];
+const duckEndPath = ["1.webp", "2.webp"];
+
 let duckIndex = 0;
-if (duckChoice >= 0.99)
+const duckChoice = Math.random();
+if (duckChoice >= 0.3)
   duckIndex = 1;
 
 export default component$(() => {
   useStyles$(style);
 
-  const currDuckFrame = useSignal(0);
   const duckToTheLeft = useSignal(false);
 
   // eslint-disable-next-line qwik/no-use-visible-task
@@ -38,22 +30,12 @@ export default component$(() => {
     return () => clearInterval(duckDirection);
   });
 
-  useVisibleTask$(() => {
-    const duckInterval = setInterval(() => {
-      currDuckFrame.value = (currDuckFrame.value + 1) % duckframes.length;
-    }, duckFrameTime);
-
-    return () => clearInterval(duckInterval); // Cleanup when component unmounts
-  });
-
   return (
-    <div class={`duck-div ${
-      duckToTheLeft.value ? leftAnim : rightAnim}
-    `}>
-      <img id='duck' src={`${baseDuckPath[duckIndex]}${ 
-        duckframes[currDuckFrame.value] + (duckToTheLeft.value ? 0 : 7)
-        }${duckFormat}`} 
-      alt='a duck!'/>
+    <div class={`duck-div ${duckToTheLeft.value ? leftAnim : rightAnim}`}>
+      { duckToTheLeft.value ?
+        <img class="duck" src={`${duckBasePath[duckIndex]}${duckEndPath[0]}`} alt="a duck!" /> :
+        <img class="duck" src={`${duckBasePath[duckIndex]}${duckEndPath[1]}`} alt="a duck!" />
+      }
     </div>
   );
 });

@@ -4,7 +4,7 @@
     height: 14vh;
 
     display: flex;
-    transition: margin 12s;
+    transition: margin 16s;
     transition-timing-function: linear;
 }
 
@@ -16,10 +16,10 @@
     margin-left: 50vw;
 }
 
-#duck  {
+.duck  {
     position: absolute;
     bottom: 0;
 
-    height: 128px;
-    width: 128px;
+    height: 145px;
+    width: 145px;
 }
