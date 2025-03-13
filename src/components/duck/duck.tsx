@@ -12,7 +12,7 @@ const duckEndPath = ["1.webp", "2.webp"];
 
 let duckIndex = 0;
 const duckChoice = Math.random();
-if (duckChoice >= 0.3)
+if (duckChoice >= 0.99)
   duckIndex = 1;
 
 export default component$(() => {
