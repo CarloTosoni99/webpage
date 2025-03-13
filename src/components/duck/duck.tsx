@@ -5,7 +5,7 @@ import style from './duck.css?inline';
 const leftAnim = "duck-left";
 const rightAnim = "duck-right";
 
-const duckAnimTime = 16000;
+const duckAnimTime = 14400;
 
 const duckBasePath = ["imgs/duck/duck", "imgs/duck/skeleduck"];
 const duckEndPath = ["1.webp", "2.webp"];

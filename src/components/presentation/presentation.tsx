@@ -32,7 +32,7 @@ export default component$<blog>((props) => {
       </div>
       <div id='right-dim'>
         <div class='box' id='right-div'>
-          <Image id='io'></Image>
+          <Image id='io' alt="that's me!"></Image>
         </div>
       </div>
     </div>
