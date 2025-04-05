@@ -2,24 +2,26 @@
     display: flex;
     align-items: stretch;
     gap: 2vw;
-    padding: 0.9em;
+    padding: 1em;
+    height: 16vh;
 }
 
 .pub-img {
     flex: 1;
     line-height: 0%;
     display: block;
-    margin-top: 1.5em;
-    margin-left: 0.5em;
+    margin-top: 2vh;
+    margin-left: 2.5em;
 }
 
 .pub-content {
-    flex: 3.5;
+    flex: 5.5;
+    margin: 0.35em 0;
 }
 
 .pub-logo {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 12vh;
 }
 
 .pub-content-category {

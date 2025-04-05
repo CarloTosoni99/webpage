@@ -27,25 +27,25 @@ body {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.25em;
     font-weight: 400;
     margin-bottom: 0.25em;
 }
 
 h1 {
-    font-size: 1.9em;
+    font-size: 2em;
     font-weight: 800;
     margin: 0;
 }
 
 h2 {
-    font-size: 1.7em;
+    font-size: 1.8em;
     font-weight: 700;
     margin: 0 0 0.5em 0;
 }
 
 h3 {
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-weight: 700;
     margin: 0.2em 0;
 }
