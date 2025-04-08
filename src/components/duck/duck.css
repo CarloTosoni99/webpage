@@ -1,7 +1,7 @@
 
 .duck-div {
     position: relative;
-    height: 16vh;
+    height: 150px;
 
     display: flex;
     transition: margin 14.4s;

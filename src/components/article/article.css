@@ -3,25 +3,28 @@
     align-items: stretch;
     gap: 2vw;
     padding: 1em;
-    height: 16vh;
 }
 
 .pub-img {
-    flex: 1;
     line-height: 0%;
-    display: block;
     margin-top: 2vh;
     margin-left: 2.5em;
+
+    flex: 1;
 }
 
 .pub-content {
-    flex: 5.5;
     margin: 0.35em 0;
+
+    flex: 5.5;
 }
 
 .pub-logo {
     width: auto;
-    height: 12vh;
+    height: 7em;
+
+    margin-bottom: 0.5em;
+    margin-left: 0.15em;
 }
 
 .pub-content-category {
