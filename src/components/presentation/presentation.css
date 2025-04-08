@@ -24,3 +24,28 @@
   align-items: stretch;
   gap: 2vw;
 }
+
+@media (max-width:641px)  {
+  #maindiv {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0;
+  }
+
+  #right-div {
+    overflow: hidden;
+    padding: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 2em;
+
+    /*text-align: center;*/
+  }
+  
+  #io {
+    display: block;
+    width: 100%;
+    scale: 1.3;
+  }
+}

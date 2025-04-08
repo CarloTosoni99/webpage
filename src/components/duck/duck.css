@@ -23,3 +23,40 @@
     height: 140px;
     width: 140px;
 }
+
+
+#duck-phone {
+    display: none;
+}
+
+@media (max-width:641px)  {
+
+    .duck-left {
+        margin-left: -80vw;
+    }
+
+    .duck-right {
+        margin-left: 20vw;
+    }
+
+    .duck-div {
+        background-color: yellow;
+        margin-bottom: 0.5em;
+        margin-top: 2.5em;
+        transition: margin 7.2s;
+        transition-timing-function: linear;
+    }
+
+    .duck {
+        height: 130px;
+        width: 130px;
+    }
+
+    #duck-laptop {
+        display: none;
+    }
+
+    #duck-phone {
+        display: inline;
+    }
+}

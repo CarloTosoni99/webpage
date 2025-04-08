@@ -10,7 +10,7 @@ body {
 .main {
     margin-left:auto;
     margin-right:auto;
-    width: 60vw;
+    width: 65vw;
 }
   
 .box {
@@ -21,14 +21,14 @@ body {
     border-color: rgba(68, 68, 68, 0.5);
     margin-bottom: 3vh;
     /*box-shadow: -1px 1px 0px 1px rgba(62, 83, 161, 0.7);*/
-    padding: 1.4em 1.4em 1.2em 1.4em;
+    padding: 1.6em 1.6em 1.2em 1.6em;
     /*background-color: rgba(175, 203, 255, 0.1);*/
     background-color: white;
 }
 
 p {
     font-size: 1.25em;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 0.25em;
 }
 
@@ -79,4 +79,26 @@ h1, h2, h3 {
 
 .hyplink:hover {
     color: red;
+}
+
+
+@media (max-width:641px)  {
+
+    h1, h2 {
+        text-align: center;
+    }s
+    h2 {
+        margin-top: 0.5em;
+    }
+
+    .main {
+        width: 95%;
+    }
+
+    .box {
+        border-style: hidden;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
 }

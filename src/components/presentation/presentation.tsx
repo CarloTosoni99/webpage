@@ -1,6 +1,8 @@
 import { component$, useStyles$ } from '@builder.io/qwik';
 import Image from '../../imgs/io.jpeg?jsx';
 
+import Duck from '~/components/duck/duck';
+
 import style from './presentation.css?inline';
 
 
@@ -19,6 +21,7 @@ export default component$<blog>((props) => {
 
   return (
     <div id="maindiv">
+      <Duck media="duck-phone"/>
       <div id='left_dim'>
         <div class='box'>
           <h1>{props.data.name}</h1>

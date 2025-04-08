@@ -13,7 +13,7 @@ export default component$(() => {
     <section>
       <Topbar page={3}/>
       <div class="main">
-        <Duck />
+        <Duck media="duck-laptop"/>
         <Presentation data={dataAbout} />
       </div>
     </section>
