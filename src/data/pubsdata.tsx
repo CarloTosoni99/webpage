@@ -17,7 +17,7 @@ const publications: article[] = [
         name: "Symposium on Combinatorial Pattern Matching (CPM)",
         image: "/imgs/pubs/CPM.png",
         date: "June 2025",
-        doi: "not available yet",
+        doi: "10.4230/LIPIcs.CPM.2025.15",
     },
     {
         title: "Indexing Finite-State Automata Using Forward-Stable Partitions",

@@ -11,6 +11,8 @@ body {
     margin-left:auto;
     margin-right:auto;
     width: 65vw;
+
+    max-width: 1300px;
 }
   
 .box {

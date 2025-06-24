@@ -3,17 +3,22 @@
     position: relative;
     height: 150px;
 
+    width: auto;
+
     display: flex;
     transition: margin 14.4s;
     transition-timing-function: linear;
+
+    /*background-color: red;*/
 }
 
+
 .duck-left {
-    margin-left: 5vw;
+    margin-left: 15%;
 }
 
 .duck-right {
-    margin-left: 50vw;
+    margin-left: 90%;
 }
 
 .duck  {

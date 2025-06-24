@@ -3,6 +3,7 @@
     align-items: stretch;
     gap: 2vw;
     padding: 1em;
+    margin-bottom: 1em;
 }
 
 .pub-img {
@@ -37,4 +38,26 @@
 
 .pub-box {
     border-width: 3px;
+}
+
+.sep {
+    display: none;
+}
+
+@media (max-width:1101px)  {
+
+    .pub-img {
+        display: none;
+    }
+}
+
+@media (max-width:641px) {
+
+    .sep {
+        display: block;
+        width: 100%;
+        border-width: 1px;
+        margin-top: 0;
+        color: rgb(211, 211, 211);
+    }
 }
