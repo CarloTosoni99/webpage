@@ -23,7 +23,7 @@ export default component$<pubs>((props) => {
 
   return (
     <div class='main'>
-      <h1 id='pubs-title'>My Publications</h1>
+      <h1 class='title'>My Publications</h1>
       {props.data.map((article) => (
         <Article key={article.doi} data={article}/>
       ))} 

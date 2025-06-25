@@ -10,7 +10,7 @@ export default component$(() => {
 
   return (
     <div class='main'>
-      <h1 id='cont-title'>My Contacts</h1>
+      <h1 class='title'>My Contacts</h1>
       <div class='box' id='cont-box'>
         <p>If you'd like to contact me to discuss research or for any other reason, feel free to email me at<a class="hyplink" href="mailto:carlo.tosoni@unive.it">carlo.tosoni@unive.it</a>.</p>
         <p>Otherwise, here you can find my<a class="hyplink" href="/media/EnglishCVMarch.pdf" target="_blank">CV</a>.</p>

@@ -28,6 +28,10 @@ body {
     background-color: white;
 }
 
+.title {
+    margin: 2em 0 0.5em 0;
+}
+
 p {
     font-size: 1.25em;
     font-weight: 500;
