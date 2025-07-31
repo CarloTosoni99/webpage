@@ -3,19 +3,12 @@ import { component$, useStyles$ } from '@builder.io/qwik';
 import Article from '~/components/article/article';
 import style from './pubs.css?inline';
 
+import { listItem } from "~/data/pubsdata";
 
-interface article {
-  title: string;
-  authors: string;
-  conference: boolean;
-  name: string;
-  image: string;
-  date: string;
-  doi: string;
-}
+
 
 interface pubs {
-  data: article[]
+  data: listItem[]
 }
 
 export default component$<pubs>((props) => {
@@ -24,8 +17,8 @@ export default component$<pubs>((props) => {
   return (
     <div class='main'>
       <h1 class='title'>My Publications</h1>
-      {props.data.map((article) => (
-        <Article key={article.doi} data={article}/>
+      {props.data.map((item) => (
+        item.ispub ? <Article key={item.pubsdata?.doi} data={item.pubsdata}/> : <div class="year"><h2>{item.year}</h2></div>
       ))} 
     </div>
   );
