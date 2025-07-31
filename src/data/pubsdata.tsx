@@ -11,6 +11,15 @@ interface article {
 
 const publications: article[] = [
     {
+        title: "Analysing New Entropy Measures for Tries",
+        authors: "C. Carfagna, C. Tosoni",
+        conference: true,
+        name: "Symposium on String Processing and Information Retrieval (SPIRE)",
+        image: "/imgs/pubs/Spire.png",
+        date: "September 2025",
+        doi: "not available yet"
+    },
+    {
         title: "Encoding Co-Lex Orders of Finite-State Automata in Linear Space",
         authors: "R. Becker, N. Cotumaccio, S. Kim, N. Prezza, C. Tosoni",
         conference: true,
