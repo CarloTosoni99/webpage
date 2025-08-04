@@ -1,14 +1,23 @@
 
 .bar {
-  background-color:  rgba(21, 23, 104, 0.979);
+  background-color:  rgba(21, 23, 104, 1);
   /*box-shadow: 0px 2px 10px 1px rgba(21, 48, 148, .7);*/
-  overflow: hidden;
   padding-right: 13vw;
 
   border-style: solid;
   border-width: 0 0 1px 0;
   border-color: #11235c;
   margin-bottom: 2vh;
+
+}
+
+.bar-list {
+  overflow: hidden;
+}
+
+
+#bar-button-menu {
+  display: none;
 }
 
 .link {
@@ -35,11 +44,76 @@
 }
 
 @media (max-width:641px)  {
+
   .bar {
-    padding-right: 8vw;
+    width: 100%;
+    padding: 0;
+    /*padding: 0.3em 8vw 3.3em 0;*/
+
+    margin-bottom: 2.5em;
+  }
+
+  .bar-list {
+    width: 100%;
+    margin: 0;
+
+    position: absolute;
+    display: flex; 
+    flex-direction: column-reverse;
+    align-items: center; 
+
+    z-index: 1;
+  }
+
+  #bar-button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 3em;
+    width: 100%;
+
+    background-color: rgba(21, 23, 104, 1);
+
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: white;
+  }
+
+
+  #bar-button-menu {
+    display: inline;
+    background-color:  rgba(21, 23, 104, 1);
+    font-size: 1.3em;
+
+    padding: 0.4em 1.2em;
+    border-radius: 10px;
+  }
+
+  #bar-button-menu:hover {
+    background-color:  #04144f;
+  }
+
+  .drop-down {
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    color: white;
+    font-family: "Roboto Serif", serif;
+    margin-left: 50%;
+  }
+
+  .dontshow {
+    display: none;
   }
 
   .link {
     font-size: 1.2em;
+    background-color: #11235c;
+
+    padding: 0.5em 0.5em;
+    width: 8em;
+    
   }
 }

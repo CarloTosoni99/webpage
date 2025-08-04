@@ -53,7 +53,7 @@ const publications: listItem[] = [
         ispub: true,
         pubsdata: {
             title: "Indexing Finite-State Automata Using Forward-Stable Partitions",
-            authors: "R. Becker, S. Kim, N. Prezza, C. Tosoni",
+            authors: "R. Becker, S. Kim, N. Prezza, and C. Tosoni",
             conference: true,
             name: "Symposium on String Processing and Information Retrieval (SPIRE)",
             image: "/imgs/pubs/Spire.png",

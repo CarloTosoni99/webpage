@@ -26,7 +26,14 @@ export default component$<articledata>((props) => {
           <h3>Title: <span class='pub-content-category'>{props.data?.title}</span></h3>
           <h3>Authors: <span class='pub-content-category'>{props.data?.authors}</span></h3>
           <h3>{props.data?.conference ? "Conference:" : "Journal:"} <span class='pub-content-category'>{props.data?.name}</span></h3>
-          <h3>Date: <span class='pub-content-category'>{props.data?.date}</span> Doi: {props.data?.doi !== notAvailableString ? <a class="hyplink" href={`${doiUrl}${props.data?.doi}`} target="_blank">{props.data?.doi}</a> : <span class='pub-content-category'>{notAvailableString}</span>}</h3>
+          <h3>
+            <span class='pub-content-date-container'>Date: 
+            <span class='pub-content-category'>{props.data?.date}</span>
+            </span>
+            Doi: {props.data?.doi !== notAvailableString ? 
+              <a class="hyplink" href={`${doiUrl}${props.data?.doi}`} target="_blank">{props.data?.doi}</a> 
+              : <span class='pub-content-category'>{notAvailableString}</span>}
+          </h3>
         </div>
       </div>
       <hr class="sep"/>

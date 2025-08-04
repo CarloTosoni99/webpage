@@ -64,4 +64,8 @@
         margin-top: 0;
         color: rgb(211, 211, 211);
     }
+
+    .pub-content-date-container {
+        display: none;
+    }
 }

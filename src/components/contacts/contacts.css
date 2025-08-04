@@ -3,8 +3,8 @@
 }
 
 #cont-div-linkedin {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
+    align-items: flex-start;
     gap: 0.4vw;
     margin-top: 0.8em;
 }
@@ -16,4 +16,11 @@
 
 #cont-par-linkedin {
     margin: 0;
+}
+
+@media (max-width:641px)  {
+
+    #contact-title {
+        margin-top: 3em;
+    }
 }
