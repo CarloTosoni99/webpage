@@ -41,7 +41,6 @@
     }
 
     .duck-div {
-        margin-top: 1.5em;
         transition: margin 7.2s;
         transition-timing-function: linear;
     }
