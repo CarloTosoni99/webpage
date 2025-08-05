@@ -40,10 +40,6 @@
         margin-left: 20vw;
     }
 
-    .duck-div {
-        transition: margin 7.2s;
-        transition-timing-function: linear;
-    }
 
     .duck {
         height: 130px;
