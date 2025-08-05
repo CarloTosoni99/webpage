@@ -21,8 +21,6 @@ export default component$<blog>((props) => {
 
   return (
     <div id="maindiv">
-      <hr id="hr-bar"/>
-      <Duck media="duck-phone"/>
       <div id='left_dim'>
         <div class='box'>
           <h1>{props.data.name}</h1>

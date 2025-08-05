@@ -13,17 +13,11 @@ const duckChoice = Math.random();
 if (duckChoice >= 0.99)
   duckIndex = 1;
 
-interface duck_mq {
-  media: string;
-}
-
-export default component$<duck_mq>((props) => {
+export default component$(() => {
   useStyles$(style);
 
   let duckAnimTime = 14400;
-  if (props.media == "duck-phone") {
-    duckAnimTime = 7200;
-  }
+  
 
   const duckToTheLeft = useSignal(false);
 
@@ -38,7 +32,7 @@ export default component$<duck_mq>((props) => {
   });
 
   return (
-    <div class={`duck-div ${duckToTheLeft.value ? leftAnim : rightAnim}`} id={props.media}>
+    <div class={`duck-div ${duckToTheLeft.value ? leftAnim : rightAnim}`} >
       { duckToTheLeft.value ?
         <img class="duck" src={`${duckBasePath[duckIndex]}${duckEndPath[0]}`} alt="a duck!" /> :
         <img class="duck" src={`${duckBasePath[duckIndex]}${duckEndPath[1]}`} alt="a duck!" />

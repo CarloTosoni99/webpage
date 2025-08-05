@@ -87,6 +87,9 @@ h1, h2, h3 {
     color: red;
 }
 
+#hr-bar {
+  display: none;
+}
 
 @media (max-width:641px)  {
 
@@ -101,10 +104,24 @@ h1, h2, h3 {
         width: 95%;
     }
 
+    #main-about-div {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
     .box {
         border-style: hidden;
         padding-bottom: 0;
         margin-bottom: 0;
+    }
+
+    #hr-bar {
+        display: inline;
+        width: 100%;
+        border-width: 1px;
+        margin-top: 0;
+        color: rgb(211, 211, 211);
     }
     
 }

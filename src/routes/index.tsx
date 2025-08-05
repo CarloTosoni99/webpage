@@ -12,8 +12,9 @@ export default component$(() => {
   return (
     <section>
       <Topbar page={3}/>
-      <div class="main">
-        <Duck media="duck-laptop"/>
+      <div class="main" id="main-about-div">
+        <hr id="hr-bar"/>
+        <Duck />
         <Presentation data={dataAbout} />
       </div>
     </section>
@@ -29,5 +30,3 @@ export const head: DocumentHead = {
     },
   ],
 };
-
-

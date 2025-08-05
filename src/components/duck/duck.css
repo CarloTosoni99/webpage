@@ -30,10 +30,6 @@
 }
 
 
-#duck-phone {
-    display: none;
-}
-
 @media (max-width:641px)  {
 
     .duck-left {
@@ -45,7 +41,6 @@
     }
 
     .duck-div {
-        background-color: yellow;
         margin-top: 1.5em;
         transition: margin 7.2s;
         transition-timing-function: linear;
@@ -56,11 +51,4 @@
         width: 130px;
     }
 
-    #duck-laptop {
-        display: none;
-    }
-
-    #duck-phone {
-        display: inline;
-    }
 }
