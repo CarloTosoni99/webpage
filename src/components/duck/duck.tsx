@@ -5,6 +5,8 @@ import style from './duck.css?inline';
 const leftAnim = "duck-left";
 const rightAnim = "duck-right";
 
+const duckAnimTime = 14400;
+
 const duckBasePath = ["imgs/duck/duck", "imgs/duck/skeleduck"];
 const duckEndPath = ["1.webp", "2.webp"];
 
@@ -15,8 +17,6 @@ if (duckChoice >= 0.99)
 
 export default component$(() => {
   useStyles$(style);
-
-  let duckAnimTime = 14400;
   
 
   const duckToTheLeft = useSignal(false);

@@ -1,8 +1,6 @@
 import { component$, useStyles$ } from '@builder.io/qwik';
 import Image from '../../imgs/io.jpeg?jsx';
 
-import Duck from '~/components/duck/duck';
-
 import style from './presentation.css?inline';
 
 
