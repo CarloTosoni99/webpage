@@ -1,29 +1,29 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-
 import Topbar from '../../components/topbar/topbar';
-import Pubs from '../../components/pubs/pubs';
+import Presentations from '../../components/presentations/presentations';
 
-import publications from "~/data/pubsdata";
-
+import presList from "~/data/presdata";
 
 
 export default component$(() => {
 
   return(
     <section>
-      <Topbar page={3}/>
-      <Pubs data={publications} />
+      <Topbar page={2}/>
+      <div>
+        <Presentations data={presList} />
+      </div>
     </section>
   );
 });
 
 export const head: DocumentHead = {
-  title: "My publications",
+  title: "My presentations",
   meta: [
     {
       name: "description",
-      content: "A list of all my publications",
+      content: "Presentations given",
     },
   ],
 };

@@ -12,6 +12,7 @@ body {
     margin-right:auto;
     width: 65vw;
 
+    /*the line below assures that all the pages have a maximum width they can stretch*/
     max-width: 1300px;
 }
   

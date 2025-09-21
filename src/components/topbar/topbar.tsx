@@ -22,10 +22,15 @@ export default component$((props: {page: Number}) => {
           'link', 'drop-down',
           props.page==2 ? 'current' : '',
           showMenu.value ? '' : 'dontshow',
-        ]} href="/publications/">Publications</Link>
+        ]} href="/presentations/">Talks</Link>
         <Link class={[
           'link', 'drop-down',
           props.page==3 ? 'current' : '',
+          showMenu.value ? '' : 'dontshow',
+        ]} href="/publications/">Publications</Link>
+        <Link class={[
+          'link', 'drop-down',
+          props.page==4 ? 'current' : '',
           showMenu.value ? '' : 'dontshow',
         ]} href="/">About</Link>
         <div id='bar-button-div'>

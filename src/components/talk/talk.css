@@ -1,0 +1,45 @@
+
+.talk {
+  display: grid;
+  column-gap: 2%;
+  grid-template-columns: 57% 42%;
+
+  margin-top: 2em;
+}
+
+.talk-left-dim {
+  flex: 5;
+
+  height: 100%;
+}
+
+.talk-right-dim {
+  flex: 3.5;
+
+  height: 100%;
+}
+
+#talk-title {
+  font-size: 1em;
+  color: black;
+  font-weight: 600;
+}
+
+.talk-content {
+  font-size: 1.1em;
+  color: black;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.talk-section {
+  margin: 0.15em;
+}
+
+#talk-header {
+  margin-bottom: 1em;
+}
+
+#talk-pdf {
+  height: 100%
+}

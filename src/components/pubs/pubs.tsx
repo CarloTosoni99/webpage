@@ -18,7 +18,7 @@ export default component$<pubs>((props) => {
     <div class='main'>
       <h1 class='title' id='title-pubs'>My Publications</h1>
       {props.data.map((item) => (
-        item.ispub ? <Article key={item.pubsdata?.doi} data={item.pubsdata}/> : <div class="year"><h2>{item.year}</h2></div>
+        item.ispub ? <Article key={item.pubsdata?.doi} data={item.pubsdata}/> : <div key={item.year} class="year"><h2>{item.year}</h2></div>
       ))} 
     </div>
   );

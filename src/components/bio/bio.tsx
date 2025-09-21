@@ -1,7 +1,7 @@
 import { component$, useStyles$ } from '@builder.io/qwik';
 import Image from '../../imgs/io.jpeg?jsx';
 
-import style from './presentation.css?inline';
+import style from './bio.css?inline';
 
 
 interface blog {
@@ -19,7 +19,7 @@ export default component$<blog>((props) => {
 
   return (
     <div id="maindiv">
-      <div id='left_dim'>
+      <div id='left-dim'>
         <div class='box'>
           <h1>{props.data.name}</h1>
           <p>{props.data.myPres}</p>

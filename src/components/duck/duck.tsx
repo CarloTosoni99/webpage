@@ -7,7 +7,7 @@ const rightAnim = "duck-right";
 
 const duckAnimTime = 14400;
 
-const duckBasePath = ["imgs/duck/duck", "imgs/duck/skeleduck"];
+const duckBasePath = ["/imgs/duck/duck", "/imgs/duck/skeleduck"];
 const duckEndPath = ["1.webp", "2.webp"];
 
 let duckIndex = 0;
