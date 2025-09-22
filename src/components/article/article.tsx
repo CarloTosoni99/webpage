@@ -20,7 +20,7 @@ export default component$<articledata>((props) => {
     <div>
       <div class='box pub' >
         <div class='pub-img'>
-          <img class='pub-logo' src={props.data?.image} alt="SPIRE logo"/>
+          <img class='pub-logo' src={props.data?.image} alt="the conference logo should be here"/>
         </div>
         <div class='pub-content'>
           <h3>Title: <span class='pub-content-category'>{props.data?.title}</span></h3>

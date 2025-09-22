@@ -1,0 +1,15 @@
+#talk-main {
+  width: 75vw;
+}
+
+@media (max-width:641px)  {
+  #talk-main {
+    width: 95vw;
+  }
+
+  #talk-intro {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}

@@ -3,14 +3,3 @@
     margin-top: 3em;
 }
 
-#title-pubs {
-    margin-top: 1.4em;
-}
-
-@media (max-width:641px)  {
-
-    #title-pubs {
-        margin-top: 3em;
-    }
-
-}

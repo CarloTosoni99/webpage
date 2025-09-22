@@ -13,9 +13,9 @@ export default component$<pres>((props) => {
   useStyles$(style);
 
   return (
-    <div class='main'>
+    <div class='main' id='talk-main'>
       <h1 class='title'>My Presentations</h1>
-      <p>In this page you can find a selection of presentations given by me</p>
+      <p id='talk-intro'>In this page you can find a selection of presentations given by me</p>
       {props.data.map((item) => (
         <Talk key={item.title} data={item} />
       ))} 

@@ -11,9 +11,7 @@ export default component$(() => {
   return(
     <section>
       <Topbar page={2}/>
-      <div>
-        <Presentations data={presList} />
-      </div>
+      <Presentations data={presList} />
     </section>
   );
 });

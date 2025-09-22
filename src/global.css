@@ -29,6 +29,10 @@ body {
     background-color: white;
 }
 
+.sep {
+    display: none;
+}
+
 .title {
     margin: 2em 0 0.5em 0;
 }
@@ -111,10 +115,23 @@ h1, h2, h3 {
         align-items: center;
     }
 
+    .title {
+        margin-top: 3em;
+    }
+
     .box {
         border-style: hidden;
         padding-bottom: 0;
         margin-bottom: 0;
+    }
+
+    .sep {
+        display: block;
+        width: 100%;
+        border-width: 1px;
+        margin-top: 0;
+        margin-bottom: 1em;
+        color: rgb(211, 211, 211);
     }
 
     #hr-bar {
