@@ -30,7 +30,7 @@ const publications: listItem[] = [
             name: "Symposium on String Processing and Information Retrieval (SPIRE)",
             image: "/imgs/pubs/Spire.png",
             date: "September 2025",
-            doi: "not available yet"
+            doi: "10.1007/978-3-032-05228-5_3"
         }
     },
     {
