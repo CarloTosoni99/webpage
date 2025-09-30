@@ -56,4 +56,12 @@
     .pub-content-date-container {
         display: none;
     }
+
+    .pub-content h3 {
+        font-size: 1.35em;
+    }
+
+    .pub {
+        margin-bottom: 0.5em;
+    }
 }

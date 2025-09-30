@@ -22,7 +22,7 @@ export default component$<pubs>((props) => {
       {props.data.map((item) => (
         item.ispub ? <Article key={item.pubsdata?.doi} data={item.pubsdata}/> : <div key={item.year} class="year"><h2>{item.year}</h2></div>
       ))}
-      <p id='pubs-arXiv-par'>Can't you access some of these articles? <a class="hyplink" href={arXivSearchLink} target="_blank">Download them from arXiv</a>!</p>
+      <p id='pubs-arXiv-par'>Can't you access the articles? <a class="hyplink" href={arXivSearchLink} target="_blank">Download them from arXiv</a>!</p>
     </div>
   );
 });

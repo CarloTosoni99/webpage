@@ -10,6 +10,7 @@
 @media (max-width:641px) {
 
     #pubs-arXiv-par {
-        font-size: 1.125em;
+        font-size: 1.1em;
+        margin-top: 2.5em;
     }
 }
