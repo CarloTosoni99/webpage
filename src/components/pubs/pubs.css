@@ -3,3 +3,13 @@
     margin-top: 3em;
 }
 
+#pubs-arXiv-par {
+    margin: 2em 0 1em 0;
+}
+
+@media (max-width:641px) {
+
+    #pubs-arXiv-par {
+        font-size: 1.125em;
+    }
+}
