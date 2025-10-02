@@ -21,7 +21,7 @@ export default component$<articledata>((props) => {
           <p class='talk-section'><span class='talk-content'>Venue: </span>{props.data.venue}</p>
           <p class='talk-section'><span class='talk-content'>Date: </span>{props.data.date}</p>
           <p class='talk-section'><span class='talk-content'>Description: </span>{props.data.description}</p>
-          <p id='talk-slide-link'><a class="hyplink" href={props.data.pdflocation} target="_blank">Download here the slides</a></p>
+          <p id='talk-slide-link'><a class="hyplink" id="talk-hyplink" href={props.data.pdflocation} target="_blank">Download here the slides</a></p>
         </div>
         <object class='talk-right-dim' id='talk-pdf' data={props.data.pdflocation} type="application/pdf" width="100%" height="500px">
           <p>Unable to preview, <a href="/presentations/SPIRE_2025.pdf">download</a> here instead.</p>

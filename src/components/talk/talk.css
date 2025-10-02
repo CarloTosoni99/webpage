@@ -48,6 +48,11 @@
   display: none;
 }
 
+#talk-hyplink-par {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 @media (max-width:1101px)  {
 
   .talk {
@@ -63,7 +68,15 @@
   #talk-slide-link {
     display: block;
     margin-top: 0.75em;
-    margin-left: -0.25em;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (max-width:641px)  {
+
+  #talk-slide-link {
+    display: block;
+    margin-top: 0.75em;
     margin-bottom: 1.5em;
   }
 }

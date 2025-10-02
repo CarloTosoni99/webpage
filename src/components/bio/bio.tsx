@@ -3,15 +3,10 @@ import Image from '../../imgs/io.jpeg?jsx';
 
 import style from './bio.css?inline';
 
+import { aboutPresentation } from "~/data/aboutdata"; 
 
 interface blog {
-  data: {
-    name: string,
-    myPres: string, 
-    title: string,
-    phdPres1: string,
-    phdPres2: string
-  }
+  data: aboutPresentation
 }
 
 export default component$<blog>((props) => {
@@ -22,7 +17,11 @@ export default component$<blog>((props) => {
       <div id='left-dim'>
         <div class='box'>
           <h1>{props.data.name}</h1>
-          <p>{props.data.myPres}</p>
+          <p>{
+            props.data.welcomePar.map((item) => (
+              item.isText ? item.content : 
+              <a class="hyplink" href={item?.hrefDest}>{item.content}</a>
+          ))}</p>
         </div>
         <div class='box'>
           <h2>{props.data.title}</h2>

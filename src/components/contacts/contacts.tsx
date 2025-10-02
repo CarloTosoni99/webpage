@@ -12,8 +12,8 @@ export default component$(() => {
     <div class='main'>
       <h1 class='title' id='contact-title'>My Contacts</h1>
       <div class='box' id='cont-box'>
-        <p>If you'd like to contact me to discuss research or for any other reason, feel free to email me at<a class="hyplink" href="mailto:carlo.tosoni@unive.it">carlo.tosoni@unive.it</a>.</p>
-        <p>Otherwise, here you can find my<a class="hyplink" href="/media/EnglishCVMarch.pdf" target="_blank">CV</a>.</p>
+        <p>If you'd like to contact me to discuss research or for any other reason, feel free to email me at <a class="hyplink" href="mailto:carlo.tosoni@unive.it">carlo.tosoni@unive.it</a>.</p>
+        <p>Otherwise, here you can find my <a class="hyplink" href="/media/EnglishCVMarch.pdf" target="_blank">CV</a>.</p>
         <p>I don't use much social media, but here you can find my LinkedIn account.</p>
         <div id="cont-div-linkedin">
             <LinkedIn id="linkedInIcon"></LinkedIn>
