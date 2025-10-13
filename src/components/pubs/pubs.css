@@ -1,5 +1,5 @@
 
-.year {
+.pub-year {
     margin-top: 3em;
 }
 
@@ -12,5 +12,9 @@
     #pubs-arXiv-par {
         font-size: 1.1em;
         margin-top: 2.5em;
+    }
+
+    .pub-year {
+        margin-bottom: 1em;
     }
 }

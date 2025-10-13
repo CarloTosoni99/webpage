@@ -25,7 +25,8 @@ export default component$<articledata>((props) => {
         <div class='pub-content'>
           <h3>Title: <span class='pub-content-category'>{props.data?.title}</span></h3>
           <h3>Authors: <span class='pub-content-category'>{props.data?.authors}</span></h3>
-          <h3>{props.data?.conference ? "Conference:" : "Journal:"} <span class='pub-content-category'>{props.data?.name}</span></h3>
+          <h3 id='pub-content-longname'>{props.data?.conference ? "Conference:" : "Journal:"} <span class='pub-content-category'>{props.data?.name}</span></h3>
+          <h3 id='pub-content-shortname'>{props.data?.conference ? "Conference:" : "Journal:"} <span class='pub-content-category'>{props.data?.shortname}</span></h3>
           <h3>
             <span class='pub-content-date-container'>Date: 
             <span class='pub-content-category'>{props.data?.date}</span>
