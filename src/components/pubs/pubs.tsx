@@ -20,7 +20,9 @@ export default component$<pubs>((props) => {
     <div class='main'>
       <h1 class='title' id='pubs-title'>My Publications</h1>
       {props.data.map((item) => (
-        item.ispub ? <Article key={item.pubsdata?.doi} data={item.pubsdata}/> : <div key={item.year} class="pub-year"><h2>{item.year}</h2></div>
+        item.ispub ? 
+          <Article key={item.pubsdata?.doi} data={item.pubsdata}/> :
+          <div key={item.year}><h2 class="pub-year">{item.year}</h2><hr class="sep"/></div>
       ))}
       <p id='pubs-arXiv-par'>Can't you access the articles? <a class="hyplink" href={arXivSearchLink} target="_blank">Download them from arXiv</a>!</p>
     </div>
