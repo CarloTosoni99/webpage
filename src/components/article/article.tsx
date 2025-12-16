@@ -8,9 +8,12 @@ interface articledata {
   data?: article
 }
 
-
 const notAvailableString = "not available yet";
+const doiString = "Doi: ";
+const urlString = "Link: ";
 const doiUrl = "https://doi.org/";
+
+
 
 
 export default component$<articledata>((props) => {
@@ -31,9 +34,21 @@ export default component$<articledata>((props) => {
             <span class='pub-content-date-container'>Date: 
             <span class='pub-content-category'>{props.data?.date}</span>
             </span>
-            Doi: {props.data?.doi !== notAvailableString ? 
-              <a class="hyplink" href={`${doiUrl}${props.data?.doi}`} target="_blank">{props.data?.doi}</a> 
-              : <span class='pub-content-category'>{notAvailableString}</span>}
+
+            {props.data?.isDoi ? 
+              <span>{doiString}
+                {props.data?.url !== notAvailableString ? 
+                  <a class="hyplink pub-content-category" href={`${doiUrl}${props.data?.url}`} target="_blank">{props.data?.url}</a>
+                  : <span class='pub-content-category'>{notAvailableString}</span>
+                } 
+              </span> :
+              <span>{urlString}
+                {props.data?.url !== notAvailableString ? 
+                  <a class="hyplink pub-content-category" href={props.data?.url} target="_blank">{props.data?.url}</a>
+                  : <span class='pub-content-category'>{notAvailableString}</span>
+                }
+              </span> 
+            }
           </h3>
         </div>
       </div>

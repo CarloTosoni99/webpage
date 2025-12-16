@@ -8,7 +8,8 @@ export interface article {
     shortname: string;
     image: string;
     date: string;
-    doi: string;
+    isDoi: boolean;
+    url: string;
 }
 
 export interface listItem {
@@ -25,6 +26,20 @@ const publications: listItem[] = [
     {
         ispub: true,
         pubsdata: {
+            title: "New Entropy Measures for Tries with Applications to the XBWT",
+            authors: "L. Carfagna and C. Tosoni",
+            conference: false,
+            name: "arXiv (preprint)",
+            shortname: "arXiv",
+            image: "/imgs/pubs/arXiv.png",
+            date: "December 2025",
+            isDoi: false,
+            url: "https://arxiv.org/abs/2512.11618"
+        }
+    },
+    {
+        ispub: true,
+        pubsdata: {
             title: "Analysing New Entropy Measures for Tries",
             authors: "L. Carfagna and C. Tosoni",
             conference: true,
@@ -32,7 +47,8 @@ const publications: listItem[] = [
             shortname: "SPIRE",
             image: "/imgs/pubs/Spire.png",
             date: "September 2025",
-            doi: "10.1007/978-3-032-05228-5_3"
+            isDoi: true,
+            url: "10.1007/978-3-032-05228-5_3"
         }
     },
     {
@@ -45,7 +61,8 @@ const publications: listItem[] = [
             shortname: "CPM",
             image: "/imgs/pubs/CPM.png",
             date: "June 2025",
-            doi: "10.4230/LIPIcs.CPM.2025.15"
+            isDoi: true,
+            url: "10.4230/LIPIcs.CPM.2025.15"
         }
     },
     {
@@ -62,7 +79,8 @@ const publications: listItem[] = [
             shortname: "SPIRE",
             image: "/imgs/pubs/Spire.png",
             date: "September 2024",
-            doi: "10.1007/978-3-031-72200-4_3"
+            isDoi: true,
+            url: "10.1007/978-3-031-72200-4_3"
         }
     }
 ];
