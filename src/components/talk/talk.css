@@ -1,28 +1,33 @@
 
+.talk-show {
+  max-height: 1000px !important;
+}
+
+
 .talk {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s linear;
+
   display: grid;
   column-gap: 2%;
   grid-template-columns: 57% 41%;
-
-  margin-top: 2em;
 }
 
 .talk-left-dim {
+  padding-top: 1.25em;
+
   flex: 5;
 
   height: 100%;
 }
 
 .talk-right-dim {
+  padding-top: 1.25em;
+
   flex: 3.5;
 
   height: 100%;
-}
-
-#talk-title {
-  font-size: 1em;
-  color: black;
-  font-weight: 600;
 }
 
 .talk-content {
@@ -36,8 +41,33 @@
   margin: 0.15em;
 }
 
-#talk-header {
-  margin-bottom: 1em;
+#talk-header-div {
+  display: grid;
+  grid-template-columns: 80% 15%;
+  column-gap: 5%;
+  width: 100%;
+
+  margin: 0.6em 0 0.9em 0;
+}
+
+.talk-header-button {
+  border-radius: 15px;
+  border-width: 0px;
+
+  width: 8em;
+  max-width: 100%;
+
+  margin: 0;
+
+  background-color: white;
+}
+
+.talk-header-button:hover {
+  background-color: rgb(211, 218, 251);
+}
+
+.talk-header-button-clicked {
+  background-color: rgb(211, 218, 251);
 }
 
 #talk-pdf {
@@ -55,10 +85,12 @@
 
 @media (max-width:1101px)  {
 
-  .talk {
+  .talk-show {
     display: block;
+  }
 
-    margin-top: 0em;
+  .talk {
+    grid-template-columns: 100%;
   }
 
   #talk-pdf {
@@ -80,12 +112,13 @@
     margin-bottom: 1.5em;
   }
 
-  #talk-header {
-    margin-bottom: 0.5em;
-  }
-
   .talk-section {
     margin: 0 0 0.1em 0;
+  }
+
+
+  .talk-box {
+    padding: 0.2em 0.5em 0.5em 0.5em !important;
   }
 
 }

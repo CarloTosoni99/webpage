@@ -2,6 +2,10 @@
   width: 75vw;
 }
 
+#talk-intro {
+  margin-bottom: 1.4em;
+}
+
 @media (max-width:641px)  {
   #talk-main {
     width: 95vw;
@@ -16,12 +20,8 @@
 
 @media (max-width:1101px)  {
 
-    #talk-main {
-      margin-bottom: 1em;
-    }
-
-    #talk-intro {
-      margin-bottom: 1em;
-    }
+  #talk-main {
+    margin-bottom: 1em;
+  }
 }
 
