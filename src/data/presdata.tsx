@@ -17,6 +17,14 @@ const presList: presentation[] = [
         pdflocation: "/presentations/SPIRE_2025.pdf"
     },
     {
+        title: "Encoding Co-Lex Orders of Finite-State Automata in Linear Space",
+        event: "Conference CPM 2025",
+        date: "17/06/2025",
+        venue: "Milan, Italy",
+        description: "Co-Lex orders are partial orders of an automaton states useful for compressing and indexing automata. Despite their usefulness, the state-of-the-art algorithm to compute them runs in quadratic time w.r.t. the number of transitions in the NFA. This is a major limitation for big data applications, where only near linear time algorithms can be run. However, the best represention for these co-lex orders require a quadratic number of bits: too much for the desired time complexity. We solve this issue by proposing the first linear space encoding for these orders.",
+        pdflocation: "/presentations/CPM_2025.pdf"
+    },
+    {
         title: "Indexing Finite-State Automata Using Forward-Stable Partitions",
         event: "Conference SPIRE 2024",
         date: "23/09/2024",
