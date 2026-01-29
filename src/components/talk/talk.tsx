@@ -21,10 +21,12 @@ export default component$<articledata>((props) => {
       <div class="box talk-box">
         <div id="talk-header-div">
           <h3>{props.data.title}</h3>
-          <button class={`button talk-header-button ${isVisible.value ? "talk-header-button-clicked" : ""}`} 
-            onClick$={() => isVisible.value = !isVisible.value}>
-            {isVisible.value ? <FaArrowUpSolid class="talk-header-button-icon" /> : <FaArrowDownSolid class="talk-header-button-icon" /> }
-          </button>
+          <div class="talk-header-button-div">
+            <button class={`button talk-header-button ${isVisible.value ? "talk-header-button-clicked" : ""}`} 
+              onClick$={() => isVisible.value = !isVisible.value}>
+              {isVisible.value ? <FaArrowUpSolid class="talk-header-button-icon" /> : <FaArrowDownSolid class="talk-header-button-icon" /> }
+            </button>
+          </div>
         </div>
         <div class={`talk ${isVisible.value ? "talk-show" : ""}`}>
           <div class='talk-left-dim'>  
