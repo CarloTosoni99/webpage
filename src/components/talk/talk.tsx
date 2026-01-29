@@ -1,5 +1,7 @@
 import { component$, useStyles$, useSignal } from '@builder.io/qwik';
 
+import { FaArrowDownSolid, FaArrowUpSolid } from "@qwikest/icons/font-awesome";
+
 import style from './talk.css?inline';
 
 import { presentation } from "~/data/presdata";
@@ -21,7 +23,7 @@ export default component$<articledata>((props) => {
           <h3>{props.data.title}</h3>
           <button class={`button talk-header-button ${isVisible.value ? "talk-header-button-clicked" : ""}`} 
             onClick$={() => isVisible.value = !isVisible.value}>
-            {isVisible.value ? "shrink" : "expand"}
+            {isVisible.value ? <FaArrowUpSolid class="talk-header-button-icon" /> : <FaArrowDownSolid class="talk-header-button-icon" /> }
           </button>
         </div>
         <div class={`talk ${isVisible.value ? "talk-show" : ""}`}>

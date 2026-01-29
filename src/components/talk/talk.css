@@ -65,7 +65,23 @@
 }
 
 .talk-header-button-clicked:hover {
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(211, 218, 251);
+  outline: none;
   background-color: white !important;
+}
+
+.talk-header-button-clicked:active {
+  border-style: outset;
+  border-style: solid;
+}
+
+.talk-header-button-icon {
+  margin-top: 0.25em;
+  color: rgb(2, 0, 131);
+  width: 1.25em;
+  height: 1.25em;
 }
 
 #talk-pdf {
@@ -112,10 +128,6 @@
 
   #talk-header-div  {
     grid-template-columns: 75% 20%;
-  }
-
-  .talk-header-button {
-    font-size: 0.95em;
   }
 
   .talk-section {
