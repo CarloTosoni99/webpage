@@ -24,7 +24,7 @@ export default component$<articledata>((props) => {
             {isVisible.value ? "shrink" : "expand"}
           </button>
         </div>
-        <div class={`talk ${isVisible.value ? "talk-show" : "talk-hide"}`}>
+        <div class={`talk ${isVisible.value ? "talk-show" : ""}`}>
           <div class='talk-left-dim'>  
             <p class='talk-section'><span class='talk-content'>Event: </span>{props.data.event}</p>
             <p class='talk-section'><span class='talk-content'>Venue: </span>{props.data.venue}</p>

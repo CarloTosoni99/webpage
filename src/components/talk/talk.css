@@ -3,7 +3,6 @@
   max-height: 1000px !important;
 }
 
-
 .talk {
   max-height: 0;
   overflow: hidden;
@@ -16,17 +15,11 @@
 
 .talk-left-dim {
   padding-top: 1.25em;
-
-  flex: 5;
-
   height: 100%;
 }
 
 .talk-right-dim {
   padding-top: 1.25em;
-
-  flex: 3.5;
-
   height: 100%;
 }
 
@@ -56,6 +49,7 @@
 
   width: 8em;
   max-width: 100%;
+  max-height: 3em;
 
   margin: 0;
 
@@ -67,7 +61,11 @@
 }
 
 .talk-header-button-clicked {
-  background-color: rgb(211, 218, 251);
+  background-color: rgb(211, 218, 251) !important;
+}
+
+.talk-header-button-clicked:hover {
+  background-color: white !important;
 }
 
 #talk-pdf {
@@ -110,6 +108,14 @@
     display: block;
     margin-top: 0.75em;
     margin-bottom: 1.5em;
+  }
+
+  #talk-header-div  {
+    grid-template-columns: 75% 20%;
+  }
+
+  .talk-header-button {
+    font-size: 0.95em;
   }
 
   .talk-section {
