@@ -9,6 +9,14 @@ export interface presentation {
 
 const presList: presentation[] = [
     {
+        title: "New Entropy Measures with Applications to the XBWT",
+        event: "Workshop DSB 2026",
+        date: "18/02/2026",
+        venue: "Ca' Foscari University of Venice, Italy",
+        description: "Entropy quantifies the number of bits required to store objects under certain assumptions. While this is a well established concept for strings, in the context of tries the state-of-the-art regarding entropies is less developed. The standard trie worst-case entropy considers the tries with a fixed nodes and alphabet size, however it does not account for the symbol distribution. In this work, we introduce new entropy measures - worst-case and empirical - exploiting information on the edge-labels. We show their reachability thorugh an extension of arithmetic coding to tries, as well as the design of efficient trie indexes compressed to their empirical entropy.",
+        pdflocation: "/presentations/DSB_2026.pdf"
+    },
+    {
         title: "Analysing New Entropy Measures for Tries",
         event: "Conference SPIRE 2025",
         date: "10/09/2025",
@@ -20,7 +28,7 @@ const presList: presentation[] = [
         title: "Encoding Co-Lex Orders of Finite-State Automata in Linear Space",
         event: "Conference CPM 2025",
         date: "17/06/2025",
-        venue: "Milan, Italy",
+        venue: "Bicocca University, Milan, Italy",
         description: "Co-Lex orders are partial orders of an automaton states useful for compressing and indexing automata. Despite their usefulness, the state-of-the-art algorithm to compute them runs in quadratic time w.r.t. the number of transitions in the NFA. This is a major limitation for big data applications, where only near linear time algorithms can be run. However, the best represention for these co-lex orders require a quadratic number of bits: too much for the desired time complexity. We solve this issue by proposing the first linear space encoding for these orders.",
         pdflocation: "/presentations/CPM_2025.pdf"
     },
