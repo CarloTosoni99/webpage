@@ -13,7 +13,7 @@ const presList: presentation[] = [
         event: "Workshop DSB 2026",
         date: "18/02/2026",
         venue: "Ca' Foscari University of Venice, Italy",
-        description: "Entropy quantifies the number of bits required to store objects under certain assumptions. While this is a well established concept for strings, in the context of tries the state-of-the-art regarding entropies is less developed. The standard trie worst-case entropy considers the tries with a fixed nodes and alphabet size, however it does not account for the symbol distribution. In this work, we introduce new entropy measures - worst-case and empirical - exploiting information on the edge-labels. We show their reachability thorugh an extension of arithmetic coding to tries, as well as the design of efficient trie indexes compressed to their empirical entropy.",
+        description: "Entropy quantifies the number of bits required to store objects under certain assumptions. While this is a well established concept for strings, in the context of tries the state-of-the-art regarding entropies is less developed. The standard trie worst-case entropy considers the tries with a fixed nodes and alphabet size, however it does not account for the symbol distribution. In this work, we introduce new entropy measures - worst-case and empirical - exploiting information on the edge-labels. We show their reachability through an extension of arithmetic coding to tries, as well as the design of efficient trie indexes compressed to their empirical entropy.",
         pdflocation: "/presentations/DSB_2026.pdf"
     },
     {
