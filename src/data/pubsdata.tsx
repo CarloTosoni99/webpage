@@ -21,6 +21,24 @@ export interface listItem {
 const publications: listItem[] = [
     {
         ispub: false,
+        year: "2026"
+    },
+    {
+        ispub: true,
+        pubsdata: {
+            title: "Faster Cache-Efficient Pattern Matching for Deterministic Wheeler Pangenome Graphs",
+            authors: "R. Maso, N. Prezza, and C. Tosoni",
+            conference: true,
+            name: "Italian Conference on Theoretical Computer Science (ICTCS)",
+            shortname: "ICTCS",
+            image: "/imgs/pubs/ICTCS.jpg",
+            date: "September 2026",
+            isDoi: false,
+            url: "https://arxiv.org/abs/2607.02113"
+        }
+    },
+    {
+        ispub: false,
         year: "2025"
     },
     {

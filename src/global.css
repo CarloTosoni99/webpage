@@ -9,7 +9,7 @@ body {
 .main {
     margin-left:auto;
     margin-right:auto;
-    width: 65vw;
+    width: 68vw;
 
     /*the line below assures that all the pages have a maximum width they can stretch*/
     max-width: 1300px;
