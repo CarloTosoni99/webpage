@@ -34,7 +34,7 @@ const publications: listItem[] = [
             image: "/imgs/pubs/ICTCS.jpg",
             date: "September 2026",
             isDoi: false,
-            url: "https://arxiv.org/abs/2607.02113"
+            url: "https://ceur-ws.org/Vol-4269/paper27.pdf"
         }
     },
     {
